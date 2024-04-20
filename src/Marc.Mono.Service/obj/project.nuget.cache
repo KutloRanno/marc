@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zLSqIKdGO6x7S6i7rDojxntYOydAPiVfippdm9PHfz2NZXyGQFU3eMogYAOxo+/fk4uKTYf7H0qHhkUSuqTErA==",
+  "dgSpecHash": "QB3/8rVmep3QohYhaw6zAKdkTDM6xStb1I1gYYUbX3SmSSk+J3xb4rPl1JWZVH3pD7qZIdW9gz+bphGITcE+dQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\abc20-010\\marccasado\\src\\marccasado.csproj",
+  "projectFilePath": "C:\\Users\\abc20-010\\marccasado\\src\\Marc.Mono.Service\\marccasado.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abc20-010\\.nuget\\packages\\asp.versioning.abstractions\\7.0.0\\asp.versioning.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\abc20-010\\.nuget\\packages\\asp.versioning.http\\7.1.0\\asp.versioning.http.7.1.0.nupkg.sha512",

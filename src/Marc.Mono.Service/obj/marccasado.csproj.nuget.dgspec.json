@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\abc20-010\\marccasado\\src\\marccasado.csproj": {}
+    "C:\\Users\\abc20-010\\marccasado\\src\\Marc.Mono.Service\\marccasado.csproj": {}
   },
   "projects": {
-    "c:\\Users\\abc20-010\\marccasado\\src\\marccasado.csproj": {
+    "C:\\Users\\abc20-010\\marccasado\\src\\Marc.Mono.Service\\marccasado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\abc20-010\\marccasado\\src\\marccasado.csproj",
+        "projectUniqueName": "C:\\Users\\abc20-010\\marccasado\\src\\Marc.Mono.Service\\marccasado.csproj",
         "projectName": "marccasado",
-        "projectPath": "c:\\Users\\abc20-010\\marccasado\\src\\marccasado.csproj",
+        "projectPath": "C:\\Users\\abc20-010\\marccasado\\src\\Marc.Mono.Service\\marccasado.csproj",
         "packagesPath": "C:\\Users\\abc20-010\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\abc20-010\\marccasado\\src\\obj\\",
+        "outputPath": "C:\\Users\\abc20-010\\marccasado\\src\\Marc.Mono.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

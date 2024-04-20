@@ -31,3 +31,14 @@ C:\Users\abc20-010\marccasado\obj\Debug\net8.0\refint\marccasado.dll
 C:\Users\abc20-010\marccasado\obj\Debug\net8.0\marccasado.pdb
 C:\Users\abc20-010\marccasado\obj\Debug\net8.0\marccasado.genruntimeconfig.cache
 C:\Users\abc20-010\marccasado\obj\Debug\net8.0\ref\marccasado.dll
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.csproj.AssemblyReference.cache
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.AssemblyInfoInputs.cache
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.AssemblyInfo.cs
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.csproj.CoreCompileInputs.cache
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.sourcelink.json
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.dll
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\refint\marccasado.dll
+C:\Users\abc20-010\marccasado\src\Marc.Mono.Service\obj\Debug\net8.0\marccasado.pdb
