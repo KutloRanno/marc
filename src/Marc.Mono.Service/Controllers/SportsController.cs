@@ -18,7 +18,8 @@ public class SportsController(IRepository<Sport> sportsRepository) : ControllerB
         {
             Name = sportDto.Name,
             PostDate = DateTimeOffset.UtcNow,
-            ImageUri = sportDto.ImageUri ?? "https://placehold.co/100"
+            ImageUri = sportDto.ImageUri ?? "https://placehold.co/100",
+            AdminId = sportDto.AdminId
         };
 
         await _sportsRepository.CreateAsync(sport);
@@ -70,4 +71,5 @@ public class SportsController(IRepository<Sport> sportsRepository) : ControllerB
 
         return NoContent();
     }
+
 }

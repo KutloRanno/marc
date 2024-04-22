@@ -12,7 +12,8 @@ namespace Marc.Mono.Service.Entities;
                 sport.Id,
                 sport.Name,
                 sport.PostDate,
-                sport.ImageUri
+                sport.ImageUri,
+                sport.AdminId
             );
         }
 
@@ -27,6 +28,16 @@ namespace Marc.Mono.Service.Entities;
                 user.PhoneNumber,
                 user.Email,
                 user.FavouriteSports
+            );
+        }
+
+        public static AdminDto AsDto(this Admin admin)
+        {
+            return new AdminDto
+            (
+                admin.Id,
+                admin.Username,
+                admin.Password
             );
         }
 

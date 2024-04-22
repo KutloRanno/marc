@@ -15,4 +15,7 @@ namespace Marc.Mono.Service.Entities;
         [Url]
         [StringLength(100)]
         public required string ImageUri { get; set; }
+
+        public required string AdminId { get; set; }
+        
     }

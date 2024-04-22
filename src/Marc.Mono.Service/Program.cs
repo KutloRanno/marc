@@ -19,7 +19,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddMongo()
                 .AddRepository<Sport>("Sports")
-                .AddRepository<User>("Users");
+                .AddRepository<User>("Users")
+                .AddRepository<Admin>("Admins");
 
 var app = builder.Build();
 

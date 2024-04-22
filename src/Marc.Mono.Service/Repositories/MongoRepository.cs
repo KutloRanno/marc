@@ -34,6 +34,11 @@ namespace Marc.Mono.Service.Repositories;
            return await _dbCollection.Find(filter).ToListAsync();
         }
 
+        public async Task<T> GetAsync(Expression<Func<T, bool>> filter)//returns mutilple or many objects matching a specific filter
+        {
+           return await _dbCollection.Find(filter).FirstOrDefaultAsync();
+        }
+
         public async Task<IReadOnlyCollection<T>> GetAllAsync()//returns all documents in collection unfiltered
         {
             return await _dbCollection.Find(filterBuilder.Empty).ToListAsync();
