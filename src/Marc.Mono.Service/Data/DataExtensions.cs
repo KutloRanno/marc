@@ -30,13 +30,13 @@ public static class DataExtensions
             return services;
         }
 
-        public static IServiceCollection AddRepository(this IServiceCollection services,string collectionName)
+        public static IServiceCollection AddRepository<T>(this IServiceCollection services,string collectionName) where T:IEntity
         {
             //registering the dependency.
-            services.AddSingleton<ISportsRepository>(serviceProvider =>
+            services.AddSingleton<IRepository<T>>(serviceProvider =>
             {
                 var database =serviceProvider.GetService<IMongoDatabase>();
-                return new MongoRepository <Sport>(database,collectionName);
+                return new MongoRepository<T>(database,collectionName);
             });
 
             return services;

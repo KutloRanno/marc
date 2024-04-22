@@ -4,58 +4,53 @@ using System.Linq.Expressions;
 
 namespace Marc.Mono.Service.Repositories;
 
-    public class MongoRepository<T> : ISportsRepository 
+    public class MongoRepository<T>(IMongoDatabase database, string collectionName) : IRepository<T> where T:IEntity //I have used a primary constructor here it seems
     {
-        private readonly IMongoCollection<Sport> _sportsCollection;
+        private readonly IMongoCollection<T> _dbCollection = database.GetCollection<T>(collectionName);
 
-          private readonly FilterDefinitionBuilder<Sport> filterBuilder = Builders<Sport>.Filter;
+          private readonly FilterDefinitionBuilder<T> filterBuilder = Builders<T>.Filter;
 
-        public MongoRepository(IMongoDatabase database, string collectionName)
+    public async Task<int> CountAsync(string? filter)
         {
-            _sportsCollection = database.GetCollection<Sport>(collectionName);
+            return (int)await _dbCollection.CountDocumentsAsync(filter);
         }
 
-        public async Task<int> CountAsync(string? filter)
+        public async Task CreateAsync(T item)//methods create exactly one sport in collection
         {
-            return (int)await _sportsCollection.CountDocumentsAsync(filter);
+        ArgumentNullException.ThrowIfNull(item);//make sure sport is not null before attempting to save
+
+        await _dbCollection.InsertOneAsync(item);//now enter sport because it exists
         }
 
-        public async Task CreateAsync(Sport sport)//methods create exactly one sport in collection
+        public async Task DeleteAsync(Guid id)//method creates exactly one sport in collection
         {
-            if(sport is null) throw new ArgumentNullException(nameof(sport));//make sure sport is not null before attempting to save
 
-            await _sportsCollection.InsertOneAsync(sport);//now enter sport because it exists
+            FilterDefinition<T> filter = filterBuilder.Eq(entity => entity.Id, id);//filters the object whose Id matched the passed id
+            await _dbCollection.DeleteOneAsync(filter);//executes the deletion of the object filtered
         }
 
-        public async Task DeleteAsync(int id)//method creates exactly one sport in collection
+        public async Task<IReadOnlyCollection<T>> GetAllAsync(Expression<Func<T, bool>> filter)//returns mutilple or many objects matching a specific filter
         {
-
-            FilterDefinition<Sport> filter = filterBuilder.Eq(entity => entity.Id, id);//filters the object whose Id matched the passed id
-            await _sportsCollection.DeleteOneAsync(filter);//executes the deletion of the object filtered
+           return await _dbCollection.Find(filter).ToListAsync();
         }
 
-        public async Task<IReadOnlyCollection<Sport>> GetAllAsync(Expression<Func<Sport, bool>> filter)//returns mutilple or many objects matching a specific filter
+        public async Task<IReadOnlyCollection<T>> GetAllAsync()//returns all documents in collection unfiltered
         {
-           return await _sportsCollection.Find(filter).ToListAsync();
+            return await _dbCollection.Find(filterBuilder.Empty).ToListAsync();
         }
 
-        public async Task<IReadOnlyCollection<Sport>> GetAllAsync()//returns all documents in collection unfiltered
+        public async Task<T?> GetAsync(Guid id)//returns a specific document on our collection based on ID
         {
-            return await _sportsCollection.Find(filterBuilder.Empty).ToListAsync();
+            return await _dbCollection.Find(filterBuilder.Eq(entity => entity.Id, id)).FirstOrDefaultAsync();
         }
 
-        public async Task<Sport?> GetAsync(int id)//returns a specific document on our collection based on ID
+        public async Task UpdateAsync(T updatedItem)//used to update a specific document on our collection based on ID
         {
-            return await _sportsCollection.Find(filterBuilder.Eq(entity => entity.Id, id)).FirstOrDefaultAsync();
-        }
 
-        public async Task UpdateAsync(Sport updatedsport)//used to update a specific document on our collection based on ID
-        {
-    
-            if(updatedsport is null) throw new ArgumentNullException(nameof(updatedsport));
+        ArgumentNullException.ThrowIfNull(updatedItem);
 
-            FilterDefinition<Sport> filter = filterBuilder.Eq(entity => entity.Id,updatedsport.Id) ;
-            await _sportsCollection.ReplaceOneAsync(filter ,updatedsport);
+        FilterDefinition<T> filter = filterBuilder.Eq(entity => entity.Id,updatedItem.Id) ;
+            await _dbCollection.ReplaceOneAsync(filter ,updatedItem);
         }
     }
 
