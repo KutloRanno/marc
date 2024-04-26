@@ -16,7 +16,6 @@ public class UserController(IRepository<User> userRepository) : ControllerBase
     {
         User user = new()
         {
-            Name = userDto.Name,
             CountryCode = userDto.CountryCode,
             PhoneNumber = userDto.PhoneNumber,
             Email = userDto.Email,

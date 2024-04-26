@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var allowedOrigins = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>();
+
+
 // Add services to the container.
 builder.Services.AddControllers(options =>
             {
@@ -22,6 +25,19 @@ builder.Services.AddMongo()
                 .AddRepository<User>("Users")
                 .AddRepository<Admin>("Admins");
 
+
+//now to enable CORS in the app
+builder.Services.AddCors(options=>
+{
+    options.AddPolicy("myAppCors",policy=>
+    {
+        policy.WithOrigins(allowedOrigins)
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+});
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,6 +48,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("myAppCors");
 
 app.MapControllers();
 
