@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("marccasado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de5eb1f08372fb2b019cd0f7deddfc5517f8fe2a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7b10d25472307441b60e530ef61fc7b233d21a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("marccasado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("marccasado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

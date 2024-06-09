@@ -12,7 +12,7 @@ public class AdminController (IRepository<Admin> adminRepository) : ControllerBa
 {
     private  readonly IRepository<Admin> _adminRepository = adminRepository;
 
-    [HttpPost]
+    [HttpPost("register")]
     public async Task<ActionResult<AdminDto>> CreateAdminAsync(CreateAdminDto adminDto)
     {
         Admin admin = new()
@@ -38,7 +38,7 @@ public class AdminController (IRepository<Admin> adminRepository) : ControllerBa
         return admin.AsDto();
     }
 
-    [HttpGet]
+    [HttpPost("login")]
     public async Task<ActionResult<AdminDto>> LoginAdminAsync(LoginAdminDto loginDto)
     {
         var admin = await _adminRepository.GetAsync(admin=>admin.Username==loginDto.Username);

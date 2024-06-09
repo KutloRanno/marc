@@ -5,12 +5,14 @@ using MongoDB.Driver;
 using Marc.Mono.Service.Entities;
 using Marc.Mono.Service.Repositories;
 using Marc.Mono.Service.Settings;
+using Marc.Mono.Service.Logging;
 
 namespace Marc.Mono.Service.Data;
 
 public static class DataExtensions
 {
-    public static IServiceCollection AddMongo(this IServiceCollection services)
+
+        public static IServiceCollection AddMongo(this IServiceCollection services)
         {
             BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
             BsonSerializer.RegisterSerializer(new DateTimeOffsetSerializer(BsonType.String));
@@ -24,6 +26,7 @@ public static class DataExtensions
                 var serviceSettings = configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
                 var mongoDbSettings = configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
                 var mongoClient = new MongoClient(mongoDbSettings.ConnectionString);
+
                 return  mongoClient.GetDatabase(serviceSettings.ServiceName);
             });
 
@@ -41,4 +44,14 @@ public static class DataExtensions
 
             return services;
         }
+
+        public static IServiceCollection AddCsvLogger(this IServiceCollection services){
+            services.AddSingleton<ILogger,CsvLogger>(serviceProvider=>{
+                var configuration = serviceProvider.GetService<IConfiguration>();
+                return new CsvLogger(configuration);
+            });
+            return services;
+        }
+
+
 }

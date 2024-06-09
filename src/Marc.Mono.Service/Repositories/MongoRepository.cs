@@ -8,9 +8,9 @@ namespace Marc.Mono.Service.Repositories;
     {
         private readonly IMongoCollection<T> _dbCollection = database.GetCollection<T>(collectionName);
 
-          private readonly FilterDefinitionBuilder<T> filterBuilder = Builders<T>.Filter;
+        private readonly FilterDefinitionBuilder<T> filterBuilder = Builders<T>.Filter;
 
-    public async Task<int> CountAsync(string? filter)
+        public async Task<int> CountAsync(string? filter)
         {
             return (int)await _dbCollection.CountDocumentsAsync(filter);
         }

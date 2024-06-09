@@ -1,5 +1,6 @@
 using Marc.Mono.Service.Dtos;
 using Marc.Mono.Service.Entities;
+using Marc.Mono.Service.Logging;
 using Marc.Mono.Service.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,9 +8,10 @@ namespace Marc.Mono.Service.Controllers;
 
 [ApiController]
 [Route("sports")]
-public class SportsController(IRepository<Sport> sportsRepository) : ControllerBase
+public class SportsController(IRepository<Sport> sportsRepository/*,CsvLogger logger*/) : ControllerBase
 {
     private readonly IRepository<Sport> _sportsRepository = sportsRepository;
+    // private readonly CsvLogger _logger=logger;
 
     [HttpPost]
     public async Task<ActionResult<SportDto>> CreateSportAsync(CreateSportDto sportDto)
@@ -32,6 +34,9 @@ public class SportsController(IRepository<Sport> sportsRepository) : ControllerB
     {
         var sports= (await _sportsRepository.GetAllAsync())
            .Select(sport => sport.AsDto());
+
+        // _logger.Log(LogLevel.Information, new EventId(1, "SportsController"), "GetSportsAsync called. Fetching all sports...", null, (state, exception) => state.ToString());
+
 
            return  Ok(sports);
     }
@@ -69,7 +74,11 @@ public class SportsController(IRepository<Sport> sportsRepository) : ControllerB
 
         await _sportsRepository.UpdateAsync(existingSport);
 
-        return NoContent();
+        var upDated = await _sportsRepository.GetAsync(id);
+
+        return Ok(upDated.AsDto());
+
+        // return NoContent();
     }
 
 }

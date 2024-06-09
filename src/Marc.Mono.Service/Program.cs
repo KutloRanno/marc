@@ -20,10 +20,15 @@ builder.Services.AddControllers(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
 builder.Services.AddMongo()
                 .AddRepository<Sport>("Sports")
                 .AddRepository<User>("Users")
                 .AddRepository<Admin>("Admins");
+
+// builder.Services.AddLogging();                
+// builder.Services.AddCsvLogger();
 
 
 //now to enable CORS in the app
