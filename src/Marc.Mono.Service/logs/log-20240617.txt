@@ -1,0 +1,1 @@
+2024-06-17 00:02:51.298 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5091/sports - null null

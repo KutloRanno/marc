@@ -6,6 +6,7 @@ using Marc.Mono.Service.Entities;
 using Marc.Mono.Service.Repositories;
 using Marc.Mono.Service.Settings;
 using Marc.Mono.Service.Logging;
+using Serilog;
 
 namespace Marc.Mono.Service.Data;
 
@@ -45,13 +46,19 @@ public static class DataExtensions
             return services;
         }
 
-        public static IServiceCollection AddCsvLogger(this IServiceCollection services){
+        /*public static IServiceCollection AddCsvLogger(this IServiceCollection services){
             services.AddSingleton<ILogger,CsvLogger>(serviceProvider=>{
                 var configuration = serviceProvider.GetService<IConfiguration>();
                 return new CsvLogger(configuration);
             });
             return services;
-        }
+        }*/
+
+        /*public static ConfigureHostBuilder AddMyLog(this ConfigurationBuilder host){
+            host.UseSerilog((context,configuration)=>[
+
+            ])
+        }*/
 
 
 }

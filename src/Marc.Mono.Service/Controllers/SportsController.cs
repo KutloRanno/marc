@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using Marc.Mono.Service.Dtos;
 using Marc.Mono.Service.Entities;
 using Marc.Mono.Service.Logging;
@@ -8,10 +9,10 @@ namespace Marc.Mono.Service.Controllers;
 
 [ApiController]
 [Route("sports")]
-public class SportsController(IRepository<Sport> sportsRepository/*,CsvLogger logger*/) : ControllerBase
+public class SportsController(IRepository<Sport> sportsRepository,ILogger<SportsController> logger) : ControllerBase
 {
     private readonly IRepository<Sport> _sportsRepository = sportsRepository;
-    // private readonly CsvLogger _logger=logger;
+    private readonly ILogger _logger=logger;
 
     [HttpPost]
     public async Task<ActionResult<SportDto>> CreateSportAsync(CreateSportDto sportDto)
@@ -26,19 +27,22 @@ public class SportsController(IRepository<Sport> sportsRepository/*,CsvLogger lo
 
         await _sportsRepository.CreateAsync(sport);
 
+        _logger.LogInformation("Hey Jude");
+
         return CreatedAtAction(nameof(GetSportByIdAsync), new { id = sport.Id }, sport);
     }
 
     [HttpGet]
     public async Task<ActionResult<IReadOnlyCollection<SportDto>>> GetSportsAsync()
     {
-        var sports= (await _sportsRepository.GetAllAsync())
+        var sports = (await _sportsRepository.GetAllAsync())
            .Select(sport => sport.AsDto());
 
-        // _logger.Log(LogLevel.Information, new EventId(1, "SportsController"), "GetSportsAsync called. Fetching all sports...", null, (state, exception) => state.ToString());
+        var time = DateTimeOffset.UtcNow; 
 
+        _logger.LogInformation("The sports collection was accessed on {DateofAccess}",time);
 
-           return  Ok(sports);
+        return  Ok(sports);
     }
 
     [HttpGet("{id}")]

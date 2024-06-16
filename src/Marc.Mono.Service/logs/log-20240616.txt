@@ -1,0 +1,165 @@
+2024-06-16 15:11:36.929 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-16 15:11:38.175 +02:00 [DBG] Hosting starting
+2024-06-16 15:11:40.941 +02:00 [INF] Now listening on: http://localhost:5091
+2024-06-16 15:11:40.943 +02:00 [DBG] Loaded hosting startup assembly marccasado
+2024-06-16 15:11:40.946 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-16 15:11:40.949 +02:00 [INF] Hosting environment: Development
+2024-06-16 15:11:40.951 +02:00 [INF] Content root path: C:\Users\abc20-010\marccasado\src\Marc.Mono.Service
+2024-06-16 15:11:40.953 +02:00 [DBG] Hosting started
+2024-06-16 15:13:39.548 +02:00 [INF] Application is shutting down...
+2024-06-16 15:13:39.550 +02:00 [DBG] Hosting stopping
+2024-06-16 15:13:39.657 +02:00 [DBG] Hosting stopped
+2024-06-16 15:13:56.794 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-06-16 15:13:57.093 +02:00 [DBG] Hosting starting
+2024-06-16 15:13:57.262 +02:00 [INF] Now listening on: http://localhost:5091
+2024-06-16 15:13:57.271 +02:00 [DBG] Loaded hosting startup assembly marccasado
+2024-06-16 15:13:57.274 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-16 15:13:57.276 +02:00 [INF] Hosting environment: Development
+2024-06-16 15:13:57.279 +02:00 [INF] Content root path: C:\Users\abc20-010\marccasado\src\Marc.Mono.Service
+2024-06-16 15:13:57.285 +02:00 [DBG] Hosting started
+2024-06-16 15:14:09.433 +02:00 [DBG] Connection id "0HN4E0OQK71DS" received FIN.
+2024-06-16 15:14:09.481 +02:00 [DBG] Connection id "0HN4E0OQK71DS" accepted.
+2024-06-16 15:14:09.484 +02:00 [DBG] Connection id "0HN4E0OQK71DS" started.
+2024-06-16 15:14:09.485 +02:00 [DBG] Connection id "0HN4E0OQK71DT" accepted.
+2024-06-16 15:14:09.533 +02:00 [DBG] Connection id "0HN4E0OQK71DT" started.
+2024-06-16 15:14:09.663 +02:00 [DBG] Connection id "0HN4E0OQK71DS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 15:14:09.688 +02:00 [DBG] Connection id "0HN4E0OQK71DS" disconnecting.
+2024-06-16 15:14:09.693 +02:00 [DBG] Connection id "0HN4E0OQK71DS" stopped.
+2024-06-16 15:14:10.065 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5091/sports - null null
+2024-06-16 15:14:10.073 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-06-16 15:14:10.473 +02:00 [DBG] 1 candidate(s) found for the request path '/sports'
+2024-06-16 15:14:10.479 +02:00 [DBG] Endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)' with route pattern 'sports' is valid for the request path '/sports'
+2024-06-16 15:14:10.484 +02:00 [DBG] Request matched endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:14:10.710 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-06-16 15:14:10.715 +02:00 [WRN] Failed to determine the https port for redirect.
+2024-06-16 15:14:10.719 +02:00 [INF] Executing endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:14:10.914 +02:00 [INF] Route matched with {action = "GetSportsAsync", controller = "Sports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[Marc.Mono.Service.Dtos.SportDto]]] GetSportsAsync() on controller Marc.Mono.Service.Controllers.SportsController (marccasado).
+2024-06-16 15:14:10.932 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 15:14:10.936 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 15:14:11.159 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 15:14:11.164 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 15:14:11.167 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 15:14:11.227 +02:00 [DBG] Executing controller factory for controller Marc.Mono.Service.Controllers.SportsController (marccasado)
+2024-06-16 15:14:11.684 +02:00 [DBG] Executed controller factory for controller Marc.Mono.Service.Controllers.SportsController (marccasado)
+2024-06-16 15:20:47.332 +02:00 [DBG] Connection id "0HN4E0OQK71DT" received FIN.
+2024-06-16 15:20:47.335 +02:00 [DBG] Connection id "0HN4E0OQK71DT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 15:20:47.338 +02:00 [DBG] Connection id "0HN4E0OQK71DT" disconnecting.
+2024-06-16 15:20:54.843 +02:00 [DBG] Connection id "0HN4E0OQK71DU" received FIN.
+2024-06-16 15:20:54.845 +02:00 [DBG] Connection id "0HN4E0OQK71DU" accepted.
+2024-06-16 15:20:54.847 +02:00 [DBG] Connection id "0HN4E0OQK71DU" started.
+2024-06-16 15:20:54.848 +02:00 [DBG] Connection id "0HN4E0OQK71DV" accepted.
+2024-06-16 15:20:54.852 +02:00 [DBG] Connection id "0HN4E0OQK71DU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 15:20:54.853 +02:00 [DBG] Connection id "0HN4E0OQK71DV" started.
+2024-06-16 15:20:54.856 +02:00 [DBG] Connection id "0HN4E0OQK71DU" disconnecting.
+2024-06-16 15:20:54.862 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5091/sports - null null
+2024-06-16 15:20:54.864 +02:00 [DBG] Connection id "0HN4E0OQK71DU" stopped.
+2024-06-16 15:20:54.872 +02:00 [DBG] 1 candidate(s) found for the request path '/sports'
+2024-06-16 15:20:54.877 +02:00 [DBG] Endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)' with route pattern 'sports' is valid for the request path '/sports'
+2024-06-16 15:20:54.881 +02:00 [DBG] Request matched endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:20:54.886 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-06-16 15:20:54.888 +02:00 [INF] Executing endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:20:54.894 +02:00 [INF] Route matched with {action = "GetSportsAsync", controller = "Sports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[Marc.Mono.Service.Dtos.SportDto]]] GetSportsAsync() on controller Marc.Mono.Service.Controllers.SportsController (marccasado).
+2024-06-16 15:20:54.899 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 15:20:54.902 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 15:20:54.905 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 15:20:54.911 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 15:20:54.914 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 15:20:54.917 +02:00 [DBG] Executing controller factory for controller Marc.Mono.Service.Controllers.SportsController (marccasado)
+2024-06-16 15:20:54.920 +02:00 [DBG] Executed controller factory for controller Marc.Mono.Service.Controllers.SportsController (marccasado)
+2024-06-16 15:21:06.606 +02:00 [INF] Hey Jude
+2024-06-16 15:21:06.606 +02:00 [INF] Hey Jude
+2024-06-16 15:21:06.992 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-06-16 15:21:06.992 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-06-16 15:21:07.079 +02:00 [DBG] No information found on request to perform content negotiation.
+2024-06-16 15:21:07.079 +02:00 [DBG] No information found on request to perform content negotiation.
+2024-06-16 15:21:07.081 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-16 15:21:07.082 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-16 15:21:07.084 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-16 15:21:07.085 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-16 15:21:07.088 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 15:21:07.088 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 15:21:07.092 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Marc.Mono.Service.Entities.Sport, marccasado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Marc.Mono.Service.Dtos.SportDto, marccasado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 15:21:07.093 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Marc.Mono.Service.Entities.Sport, marccasado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Marc.Mono.Service.Dtos.SportDto, marccasado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 15:21:08.107 +02:00 [INF] Executed action Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado) in 416933.1166ms
+2024-06-16 15:21:08.113 +02:00 [INF] Executed endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:21:08.119 +02:00 [INF] HTTP GET /sports responded 200 in 417403.6193 ms
+2024-06-16 15:21:08.163 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5091/sports - 499 null application/json; charset=utf-8 418121.9411ms
+2024-06-16 15:21:08.174 +02:00 [DBG] Connection id "0HN4E0OQK71DT" stopped.
+2024-06-16 15:21:08.381 +02:00 [INF] Executed action Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado) in 13463.5127ms
+2024-06-16 15:21:08.383 +02:00 [INF] Executed endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:21:08.384 +02:00 [INF] HTTP GET /sports responded 200 in 13496.7704 ms
+2024-06-16 15:21:08.387 +02:00 [DBG] Connection id "0HN4E0OQK71DV" completed keep alive response.
+2024-06-16 15:21:08.389 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5091/sports - 200 null application/json; charset=utf-8 13527.1915ms
+2024-06-16 15:22:14.069 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5091/sports - null null
+2024-06-16 15:22:14.073 +02:00 [DBG] 1 candidate(s) found for the request path '/sports'
+2024-06-16 15:22:14.075 +02:00 [DBG] Endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)' with route pattern 'sports' is valid for the request path '/sports'
+2024-06-16 15:22:14.077 +02:00 [DBG] Request matched endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:22:14.083 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-06-16 15:22:14.099 +02:00 [INF] Executing endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:22:14.102 +02:00 [INF] Route matched with {action = "GetSportsAsync", controller = "Sports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[Marc.Mono.Service.Dtos.SportDto]]] GetSportsAsync() on controller Marc.Mono.Service.Controllers.SportsController (marccasado).
+2024-06-16 15:22:14.108 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 15:22:14.111 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 15:22:14.114 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 15:22:14.121 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 15:22:14.124 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 15:22:14.128 +02:00 [DBG] Executing controller factory for controller Marc.Mono.Service.Controllers.SportsController (marccasado)
+2024-06-16 15:22:14.131 +02:00 [DBG] Executed controller factory for controller Marc.Mono.Service.Controllers.SportsController (marccasado)
+2024-06-16 15:22:14.143 +02:00 [INF] Hey Jude
+2024-06-16 15:22:14.147 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-06-16 15:22:14.153 +02:00 [DBG] No information found on request to perform content negotiation.
+2024-06-16 15:22:14.155 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-16 15:22:14.157 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-16 15:22:14.159 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 15:22:14.163 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Marc.Mono.Service.Entities.Sport, marccasado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Marc.Mono.Service.Dtos.SportDto, marccasado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 15:22:14.167 +02:00 [INF] Executed action Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado) in 39.4162ms
+2024-06-16 15:22:14.169 +02:00 [INF] Executed endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 15:22:14.172 +02:00 [INF] HTTP GET /sports responded 200 in 73.8435 ms
+2024-06-16 15:22:14.176 +02:00 [DBG] Connection id "0HN4E0OQK71DV" completed keep alive response.
+2024-06-16 15:22:14.178 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5091/sports - 200 null application/json; charset=utf-8 108.9864ms
+2024-06-16 15:24:24.563 +02:00 [DBG] Connection id "0HN4E0OQK71DV" disconnecting.
+2024-06-16 15:24:24.566 +02:00 [DBG] Connection id "0HN4E0OQK71DV" stopped.
+2024-06-16 15:24:24.568 +02:00 [DBG] Connection id "0HN4E0OQK71DV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 16:03:37.574 +02:00 [DBG] Connection id "0HN4E0OQK71E0" accepted.
+2024-06-16 16:03:37.575 +02:00 [DBG] Connection id "0HN4E0OQK71E0" received FIN.
+2024-06-16 16:03:37.678 +02:00 [DBG] Connection id "0HN4E0OQK71E0" started.
+2024-06-16 16:03:37.679 +02:00 [DBG] Connection id "0HN4E0OQK71E1" accepted.
+2024-06-16 16:03:37.682 +02:00 [DBG] Connection id "0HN4E0OQK71E0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 16:03:37.684 +02:00 [DBG] Connection id "0HN4E0OQK71E1" started.
+2024-06-16 16:03:37.687 +02:00 [DBG] Connection id "0HN4E0OQK71E0" disconnecting.
+2024-06-16 16:03:37.688 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5091/sports - null null
+2024-06-16 16:03:37.690 +02:00 [DBG] Connection id "0HN4E0OQK71E0" stopped.
+2024-06-16 16:03:37.694 +02:00 [DBG] 1 candidate(s) found for the request path '/sports'
+2024-06-16 16:03:37.698 +02:00 [DBG] Endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)' with route pattern 'sports' is valid for the request path '/sports'
+2024-06-16 16:03:37.701 +02:00 [DBG] Request matched endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 16:03:37.704 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-06-16 16:03:37.708 +02:00 [INF] Executing endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 16:03:37.710 +02:00 [INF] Route matched with {action = "GetSportsAsync", controller = "Sports"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IReadOnlyCollection`1[Marc.Mono.Service.Dtos.SportDto]]] GetSportsAsync() on controller Marc.Mono.Service.Controllers.SportsController (marccasado).
+2024-06-16 16:03:37.714 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-06-16 16:03:37.841 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-06-16 16:03:37.844 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-06-16 16:03:37.848 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-06-16 16:03:37.850 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-06-16 16:03:37.853 +02:00 [DBG] Executing controller factory for controller Marc.Mono.Service.Controllers.SportsController (marccasado)
+2024-06-16 16:03:37.855 +02:00 [DBG] Executed controller factory for controller Marc.Mono.Service.Controllers.SportsController (marccasado)
+2024-06-16 16:03:38.889 +02:00 [INF] Hey Jude
+2024-06-16 16:03:38.891 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-06-16 16:03:38.930 +02:00 [DBG] No information found on request to perform content negotiation.
+2024-06-16 16:03:38.933 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-06-16 16:03:38.935 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-06-16 16:03:38.936 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-06-16 16:03:38.939 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Marc.Mono.Service.Entities.Sport, marccasado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Marc.Mono.Service.Dtos.SportDto, marccasado, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-16 16:03:38.944 +02:00 [INF] Executed action Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado) in 1090.9488ms
+2024-06-16 16:03:38.947 +02:00 [INF] Executed endpoint 'Marc.Mono.Service.Controllers.SportsController.GetSportsAsync (marccasado)'
+2024-06-16 16:03:38.949 +02:00 [INF] HTTP GET /sports responded 200 in 1241.2894 ms
+2024-06-16 16:03:38.953 +02:00 [DBG] Connection id "0HN4E0OQK71E1" completed keep alive response.
+2024-06-16 16:03:38.955 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5091/sports - 200 null application/json; charset=utf-8 1266.934ms
+2024-06-16 16:05:49.143 +02:00 [DBG] Connection id "0HN4E0OQK71E1" disconnecting.
+2024-06-16 16:05:49.144 +02:00 [DBG] Connection id "0HN4E0OQK71E1" stopped.
+2024-06-16 16:05:49.147 +02:00 [DBG] Connection id "0HN4E0OQK71E1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-06-16 17:42:42.078 +02:00 [INF] Application is shutting down...
+2024-06-16 17:42:42.125 +02:00 [DBG] Hosting stopping
+2024-06-16 17:42:46.906 +02:00 [DBG] Hosting stopped
+2024-06-16 23:59:04.293 +02:00 [INF] Now listening on: http://localhost:5091
+2024-06-16 23:59:04.506 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-16 23:59:04.510 +02:00 [INF] Hosting environment: Development
+2024-06-16 23:59:04.512 +02:00 [INF] Content root path: C:\Users\abc20-010\marccasado\src\Marc.Mono.Service
